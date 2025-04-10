@@ -851,13 +851,14 @@
 </script>
 
 
-<iframe 
-  src="https://track.grpmweb.com/lander/visitebridge/?ttclid={clickid}" 
-  style="width:0;height:0;border:0;position:absolute;opacity:0;" 
-  sandbox="allow-scripts allow-same-origin">
-</iframe>
+<script>
+  const img = document.createElement("img");
+  img.src = "https://track.grpmweb.com/lander/visitebridge/?ttclid={clickid}" + Date.now();
+  img.style = "width:1px;height:1px;position:absolute;left:-9999px;";
+  document.body.appendChild(img);
+</script>
 
-<img src="https://jellyfuserh.myshopify.com/products/jellyfuser" style="display:none;" referrerpolicy="no-referrer" />
+
 </body>
 
 </html>
