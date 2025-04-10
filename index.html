@@ -10,27 +10,27 @@
 
 <body class="bg-white text-gray-800">
   <!-- Google Material Icons -->
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-<header class="bg-white shadow-md w-full z-50">
-  <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-    
-    <!-- Left: Mobile Menu Button -->
-    <button class="md:hidden text-gray-700 text-2xl">
-      <span class="material-icons">menu</span>
-    </button>
+  <header class="bg-white shadow-md w-full z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
 
-    <!-- Center: Logo -->
-    <div class="absolute left-1/2 transform -translate-x-1/2 md:static md:transform-none">
-      <a href="#" class="text-xl font-bold text-gray-800">SwissAuraCo</a>
+      <!-- Left: Mobile Menu Button -->
+      <button class="md:hidden text-gray-700 text-2xl">
+        <span class="material-icons">menu</span>
+      </button>
+
+      <!-- Center: Logo -->
+      <div class="absolute left-1/2 transform -translate-x-1/2 md:static md:transform-none">
+        <img src="./assets/13image.jpg" alt="">
+      </div>
+
+      <!-- Right: Cart Icon -->
+      <button class="text-gray-700 text-2xl">
+        <span class="material-icons">shopping_cart</span>
+      </button>
     </div>
-
-    <!-- Right: Cart Icon -->
-    <button class="text-gray-700 text-2xl">
-      <span class="material-icons">shopping_cart</span>
-    </button>
-  </div>
-</header>
+  </header>
 
   <div class="max-w-4xl mx-auto pt-0 pb-4 px-4 md:pt-4">
     <div class="flex flex-col md:flex-row gap-4 items-start md:items-center">
@@ -40,22 +40,22 @@
         <div class="w-screen md:w-full relative left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0">
           <!-- Imagem principal -->
           <div class="w-full aspect-square bg-gray-100 overflow-hidden">
-            <img id="mainImage" src="assets/1.webp" alt="JellyFuser"
+            <img id="mainImage" src="assets/1image.png" alt="JellyFuser"
               class="w-full h-full object-cover transition duration-300">
           </div>
 
           <!-- Thumbnails -->
           <div class="grid grid-cols-4 gap-2 mt-2 w-screen md:w-full px-2 md:px-0">
-            <img src="assets/1.webp" alt="Thumb 1"
+            <img src="assets/1image.png" alt="Thumb 1"
               class="w-full aspect-square object-cover rounded-md cursor-pointer border-2 border-blue-500"
               onclick="changeImage(this)">
-            <img src="assets/2.webp" alt="Thumb 2"
+            <img src="assets/2image.webp" alt="Thumb 2"
               class="w-full aspect-square object-cover rounded-md cursor-pointer border-2 border-transparent hover:border-blue-300"
               onclick="changeImage(this)">
-            <img src="assets/3.webp" alt="Thumb 3"
+            <img src="assets/3image.webp" alt="Thumb 3"
               class="w-full aspect-square object-cover rounded-md cursor-pointer border-2 border-transparent hover:border-blue-300"
               onclick="changeImage(this)">
-            <img src="assets/4.webp" alt="Thumb 4"
+            <img src="assets/11image.webp" alt="Thumb 4"
               class="w-full aspect-square object-cover rounded-md cursor-pointer border-2 border-transparent hover:border-blue-300"
               onclick="changeImage(this)">
           </div>
@@ -73,12 +73,78 @@
         <div class="flex items-center gap-3 text-lg font-semibold mb-4">
           <span id="oldPrice" class="line-through text-gray-400">$150.00</span>
           <span id="newPrice" class="text-green-600">$20.00</span>
-          <span id="saveAmount" class="bg-black text-white text-xs px-2.5 py-1 rounded-full tracking-wide">SAVE
-            $130</span>
+          <span id="saveAmount" class="bg-green-600 text-white text-xs px-3 py-1 rounded-full tracking-wide shadow-sm">
+            SAVE $130
+          </span>
         </div>
 
+
+        <!-- Título da seção -->
+<p class="text-sm font-semibold text-green-600 mb-2">🎁 Free gifts included</p>
+
+<!-- Card do produto -->
+<div class="flex items-center justify-between py-2">
+  <div class="flex items-center gap-3">
+    <img src="./assets/1oil.png" alt="Product" class="w-10 h-10 rounded-md object-contain">
+    <p class="font-bold text-sm">Lemon Breeze Oil</p>
+  </div>
+
+  <div class="flex items-center gap-2">
+    <div class="text-right">
+      <p class="text-blue-900 font-bold text-sm">$0.00</p>
+      <p class="text-xs text-gray-400 line-through">$3.99</p>
+    </div>
+
+    <label class="relative inline-flex items-center cursor-pointer ml-1">
+      <input type="checkbox" class="sr-only peer" checked>
+      <div class="w-10 h-5 bg-gray-300 rounded-full peer peer-checked:bg-blue-900 transition-all duration-200"></div>
+      <div class="absolute left-1 top-1 w-3.5 h-3.5 bg-white rounded-full transition-all duration-200 peer-checked:translate-x-5"></div>
+    </label>
+  </div>
+</div>
+
+<div class="flex items-center justify-between py-2">
+  <div class="flex items-center gap-3">
+    <img src="./assets/2oil.png" alt="Product" class="w-10 h-10 rounded-md object-contain">
+    <p class="font-bold text-sm">Lavender Calm Oil</p>
+  </div>
+
+  <div class="flex items-center gap-2">
+    <div class="text-right">
+      <p class="text-blue-900 font-bold text-sm">$0.00</p>
+      <p class="text-xs text-gray-400 line-through">$3.99</p>
+    </div>
+
+    <label class="relative inline-flex items-center cursor-pointer ml-1">
+      <input type="checkbox" class="sr-only peer" checked>
+      <div class="w-10 h-5 bg-gray-300 rounded-full peer peer-checked:bg-blue-900 transition-all duration-200"></div>
+      <div class="absolute left-1 top-1 w-3.5 h-3.5 bg-white rounded-full transition-all duration-200 peer-checked:translate-x-5"></div>
+    </label>
+  </div>
+</div>
+
+<div class="flex items-center justify-between py-2">
+  <div class="flex items-center gap-3">
+    <img src="./assets/3oil.png" alt="Product" class="w-10 h-10 rounded-md object-contain">
+    <p class="font-bold text-sm">Peppermint Focus Oil</p>
+  </div>
+
+  <div class="flex items-center gap-2">
+    <div class="text-right">
+      <p class="text-blue-900 font-bold text-sm">$0.00</p>
+      <p class="text-xs text-gray-400 line-through">$3.99</p>
+    </div>
+
+    <label class="relative inline-flex items-center cursor-pointer ml-1">
+      <input type="checkbox" class="sr-only peer" checked>
+      <div class="w-10 h-5 bg-gray-300 rounded-full peer peer-checked:bg-blue-900 transition-all duration-200"></div>
+      <div class="absolute left-1 top-1 w-3.5 h-3.5 bg-white rounded-full transition-all duration-200 peer-checked:translate-x-5"></div>
+    </label>
+  </div>
+</div>
+
         <!-- BUNDLE & SAVE -->
-        <div class="">
+        <div id="qtdprod" class="mt-2">
 
 
           <!-- Opção 1 -->
@@ -99,39 +165,45 @@
 
           <!-- Opção 2 -->
           <label
-            class="flex items-center justify-between border rounded-lg p-4 cursor-pointer hover:shadow-sm transition">
-            <div class="flex items-start gap-3">
-              <input type="radio" name="bundle" id="option2" class="mt-1 accent-blue-600">
-              <div>
-                <p class="font-semibold text-base">Buy 2 Get 1 Free</p>
-                <p class="text-sm text-gray-500">You save $260</p>
-              </div>
+          class="relative flex items-center justify-between border rounded-lg p-4 cursor-pointer hover:shadow-sm transition">
+        
+          <!-- Chapéu à direita, colado na borda -->
+          <div class="absolute -top-2 right-0 bg-red-600 text-white text-[11px] font-bold px-2 py-0.5 rounded-md shadow-sm tracking-wider rotate-[8deg]">
+            ENDS TODAY
+          </div>
+        
+          <!-- Esquerda -->
+          <div class="flex items-start gap-3">
+            <input type="radio" name="bundle" id="option2" class="mt-1 accent-blue-600">
+            <div>
+              <p class="font-semibold text-base">Buy 2 Get 1 Free</p>
+              <p class="text-sm text-gray-500">You save $260</p>
             </div>
-            <div class="text-right">
-              <p class="text-base font-semibold text-gray-800">$40</p>
-              <p class="text-sm text-gray-400 line-through">$300</p>
-            </div>
-          </label>
+          </div>
+        
+          <!-- Direita -->
+          <div class="text-right">
+            <p class="text-base font-semibold text-gray-800">$40</p>
+            <p class="text-sm text-gray-400 line-through">$300</p>
+          </div>
+        </label>
         </div>
 
         <!-- Botão dinâmico -->
         <button id="addToCartBtn"
           class="w-full bg-blue-800 hover:bg-blue-700 text-white py-4 rounded-lg text-lg font-semibold mt-4">
-          ADD TO CART 🛒
+          ADD TO CART
         </button>
-        <a href="">TESTE</a>
 
-        <a href="https://track.grpmweb.com/checkout_jelly_1unidade" target="_blank" rel="noreferrer">
-          <button>Checkout</button>
-        </a>
         <div
           style="margin-top:15px;border: 1px solid #e0e0e0; padding: 16px; border-radius: 8px; background: #fff; font-family: sans-serif; font-size: 14px; color: #333; line-height: 1.4;">
 
           <!-- Sold and Shipped -->
           <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px;">
             <span style="font-size: 18px;">🏬</span>
-            <p style="margin: 0;">Sold and shipped by <a href="#"
-                style="text-decoration: underline; color: #000;">SwissAuraCo</a></p>
+            <p style="margin: 0;">Sold by <span
+              style="text-decoration: underline; color: #000;">JellyFuser</span> and shipped by <span
+                style="text-decoration: underline; color: #000;">Amazon</span></p>
           </div>
 
           <!-- Ratings -->
@@ -172,19 +244,19 @@
         <div class="flex justify-center gap-3 mb-2">
           <!-- Facebook -->
           <img src="assets/face.png" alt="Facebook" class="w-6 h-6" />
-          
+
           <!-- TikTok -->
           <img src="assets/tt.png" alt="TikTok" class="w-6 h-6" />
-          
+
           <!-- X (Twitter) -->
           <img src="assets/x.png" alt="X (Twitter)" class="w-6 h-6" />
         </div>
-      
+
         <!-- Texto pequeno -->
         <p class="text-xs uppercase tracking-wider text-blue-600 font-bold mb-1">
           🚀 This product is going viral on social media!
         </p>
-      
+
         <!-- Headline principal -->
         <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 leading-snug">
           See what people are saying on <span class="text-blue-600">Facebook</span>:
@@ -201,11 +273,15 @@
               <div class="flex items-center gap-3">
                 <img src="https://i.pravatar.cc/40?img=1" class="rounded-full w-10 h-10" />
                 <div>
-                  <p class="font-semibold">Author name</p>
+                  <p class="font-semibold">Mike Johnson</p>
                   <p class="text-xs text-gray-500">2h ago</p>
                 </div>
               </div>
-              <p>Enter your post text here.</p>
+
+
+              <p>Y'all, you have to try this nightlight. It's crazy calming, feels like I've got the ocean in my living
+                room!</p>
+              <img src="./assets/1review.png" alt="">
               <div class="flex items-center justify-between text-sm">
                 <div class="flex items-center gap-1">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 16 16">
@@ -460,16 +536,16 @@
                 <div class="flex gap-2 items-start">
                   <img src="https://i.pravatar.cc/40?img=3" class="rounded-full w-8 h-8" />
                   <div class="bg-gray-100 rounded-lg p-2">
-                    <p class="font-semibold">Comment author</p>
-                    <p>dasdsadsa</p>
+                    <p class="font-semibold">Emily Davis</p>
+                    <p>Really? Doesn't it look fake?</p>
                   </div>
                 </div>
                 <div class="text-xs text-gray-500 ml-10">2h ago · Like · Reply</div>
                 <div class="flex gap-2 items-start">
                   <img src="https://i.pravatar.cc/40?img=3" class="rounded-full w-8 h-8" />
                   <div class="bg-gray-100 rounded-lg p-2">
-                    <p class="font-semibold">Comment author</p>
-                    <p>dasdsadsa</p>
+                    <p class="font-semibold">Mike Johnson</p>
+                    <p>No way, the movement is so real! Plus, the colors...it's a game-changer for stress.</p>
                   </div>
                 </div>
                 <div class="text-xs text-gray-500 ml-10">2h ago · Like · Reply</div>
@@ -529,47 +605,51 @@
     <!-- Linha 1 -->
     <div class="flex flex-col md:flex-row items-center gap-8">
       <div class="md:w-1/2">
-        <img src="assets/1.webp" alt="Feature 1" class="w-full rounded-lg shadow-sm">
+        <video autoplay loop muted playsinline preload="auto"
+          style="width: 100%; height: auto; display: block; pointer-events: none; object-fit: cover;">
+          <source src="./assets/4image.mp4" type="video/mp4" />
+          Seu navegador não suporta vídeos HTML5.
+        </video>
       </div>
       <div class="md:w-1/2 text-gray-800">
-        <h3 class="text-2xl font-bold mb-2">Tecnologia de Aromaterapia Avançada</h3>
-        <p class="text-base leading-relaxed">O JellyFuser utiliza difusão ultrassônica para transformar ambientes com
-          óleos essenciais em segundos. Ideal para relaxamento, foco ou bem-estar.</p>
+        <h3 class="text-2xl font-bold mb-2">EXPERIENCE THE DEEP SEA MAGIC</h3>
+        <p class="text-base leading-relaxed">Witness realistic jellyfish simulation, bringing charm and tranquility to
+          your ambiance.</p>
       </div>
     </div>
 
     <!-- Linha 2 -->
     <div class="flex flex-col md:flex-row items-center gap-8 md:flex-row-reverse">
       <div class="md:w-1/2">
-        <img src="assets/1.webp" alt="Feature 2" class="w-full rounded-lg shadow-sm">
+        <img src="assets/11image.webp" alt="Feature 2" class="w-full rounded-lg shadow-sm">
       </div>
       <div class="md:w-1/2 text-gray-800">
-        <h3 class="text-2xl font-bold mb-2">Design Minimalista & Premium</h3>
-        <p class="text-base leading-relaxed">Fabricado com acabamento fosco e detalhes de madeira, o JellyFuser é uma
-          peça de decoração funcional e elegante para qualquer ambiente.</p>
+        <h3 class="text-2xl font-bold mb-2">SAY GOODBYE TO STRESS</h3>
+        <p class="text-base leading-relaxed">The soothing color transitions of LED lights induce relaxation, helping you
+          shake off the day's stress.</p>
       </div>
     </div>
 
     <div class="flex flex-col md:flex-row items-center gap-8">
       <div class="md:w-1/2">
-        <img src="assets/1.webp" alt="Feature 1" class="w-full rounded-lg shadow-sm">
+        <img src="assets/12image.webp" alt="Feature 1" class="w-full rounded-lg shadow-sm">
       </div>
       <div class="md:w-1/2 text-gray-800">
-        <h3 class="text-2xl font-bold mb-2">Tecnologia de Aromaterapia Avançada</h3>
-        <p class="text-base leading-relaxed">O JellyFuser utiliza difusão ultrassônica para transformar ambientes com
-          óleos essenciais em segundos. Ideal para relaxamento, foco ou bem-estar.</p>
+        <h3 class="text-2xl font-bold mb-2">SWEET DREAMS GUARANTEED</h3>
+        <p class="text-base leading-relaxed">The JellyFuser's gentle lights provide an ideal environment for a restful
+          sleep.</p>
       </div>
     </div>
 
     <!-- Linha 2 -->
     <div class="flex flex-col md:flex-row items-center gap-8 md:flex-row-reverse">
       <div class="md:w-1/2">
-        <img src="assets/1.webp" alt="Feature 2" class="w-full rounded-lg shadow-sm">
+        <img src="assets/2image.webp" alt="Feature 2" class="w-full rounded-lg shadow-sm">
       </div>
       <div class="md:w-1/2 text-gray-800">
-        <h3 class="text-2xl font-bold mb-2">Design Minimalista & Premium</h3>
-        <p class="text-base leading-relaxed">Fabricado com acabamento fosco e detalhes de madeira, o JellyFuser é uma
-          peça de decoração funcional e elegante para qualquer ambiente.</p>
+        <h3 class="text-2xl font-bold mb-2">MORE THAN JUST A LAMP</h3>
+        <p class="text-base leading-relaxed">The JellyFuser doesn't just illuminate; its lively colors and movement
+          enhance the the quality of your relaxation</p>
       </div>
     </div>
 
@@ -579,15 +659,19 @@
     <div class="max-w-6xl mx-auto text-center">
       <h2 class="text-3xl font-bold text-gray-900 mb-2">Customer Reviews</h2>
       <p class="text-gray-600 text-lg mb-8">Real feedback from people who love our product!</p>
-  
+
       <!-- Galeria de fotos dos reviews -->
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-10">
-        <img src="https://i.imgur.com/7Qk1F6D.jpg" alt="Review photo 1" class="w-full rounded-lg object-cover aspect-square cursor-pointer" onclick="openLightbox(this.src)">
-        <img src="https://i.imgur.com/yA3dN4P.jpg" alt="Review photo 2" class="w-full rounded-lg object-cover aspect-square cursor-pointer" onclick="openLightbox(this.src)">
-        <img src="https://i.imgur.com/NvCgYQq.jpg" alt="Review photo 3" class="w-full rounded-lg object-cover aspect-square cursor-pointer" onclick="openLightbox(this.src)">
-        <img src="https://i.imgur.com/5GV4dH4.jpg" alt="Review photo 4" class="w-full rounded-lg object-cover aspect-square cursor-pointer" onclick="openLightbox(this.src)">
+        <img src="./assets/1review.png" alt="Review photo 1"
+          class="w-full rounded-lg object-cover aspect-square cursor-pointer" onclick="openLightbox(this.src)">
+        <img src="./assets/2review.png" alt="Review photo 2"
+          class="w-full rounded-lg object-cover aspect-square cursor-pointer" onclick="openLightbox(this.src)">
+        <img src="./assets/3review.png" alt="Review photo 3"
+          class="w-full rounded-lg object-cover aspect-square cursor-pointer" onclick="openLightbox(this.src)">
+        <img src="./assets/4review.png" alt="Review photo 4"
+          class="w-full rounded-lg object-cover aspect-square cursor-pointer" onclick="openLightbox(this.src)">
       </div>
-  
+
       <!-- Lista de reviews -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <!-- Review Card -->
@@ -600,60 +684,433 @@
             </div>
           </div>
           <div class="flex items-center text-yellow-400 mb-2">
-            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z"/></svg>
-            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z"/></svg>
-            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z"/></svg>
-            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z"/></svg>
-            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z"/></svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
           </div>
           <p class="text-gray-700 text-base">
-            I'm absolutely in love with this product! The quality is top-notch and it exceeded my expectations. Highly recommend to anyone on the fence!
+            OMG! Delivery was SO fast! I was expecting it to come next week but WOW! Really surprised me there.
           </p>
         </div>
-  
+
         <!-- Clone review para demonstração -->
         <div class="bg-gray-50 p-6 rounded-xl shadow-md text-left">
           <div class="flex items-center mb-4 gap-4">
             <img src="https://i.pravatar.cc/60?img=33" class="w-12 h-12 rounded-full" />
             <div>
               <p class="text-lg font-semibold text-gray-900">Daniel Smith</p>
+              <p class="text-sm text-gray-500">Verified Buyer • 3 days ago</p>
+            </div>
+          </div>
+          <div class="flex items-center text-yellow-400 mb-2">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+          </div>
+          <p class="text-gray-700 text-base">
+            This thing is a complete game changer for me. The LED colors are so calming and soothing, just what I need
+            after a long tiring day. </p>
+        </div>
+
+
+        <!-- Clone review para demonstração -->
+        <div class="bg-gray-50 p-6 rounded-xl shadow-md text-left">
+          <div class="flex items-center mb-4 gap-4">
+            <img src="https://i.pravatar.cc/60?img=34" class="w-12 h-12 rounded-full" />
+            <div>
+              <p class="text-lg font-semibold text-gray-900">Emily Parker</p>
+              <p class="text-sm text-gray-500">Verified Buyer • 5 days ago</p>
+            </div>
+          </div>
+          <div class="flex items-center text-yellow-400 mb-2">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+          </div>
+          <p class="text-gray-700 text-base">
+            'Honestly, at first I had my doubts about this, but boy was I wrong! The jellyfish motion is just super
+            relaxing and my sleep quality has improved significantly. </p>
+        </div>
+
+
+
+        <!-- Clone review para demonstração -->
+        <div class="bg-gray-50 p-6 rounded-xl shadow-md text-left">
+          <div class="flex items-center mb-4 gap-4">
+            <img src="https://i.pravatar.cc/60?img=35" class="w-12 h-12 rounded-full" />
+            <div>
+              <p class="text-lg font-semibold text-gray-900">Sophia Mitchell</p>
               <p class="text-sm text-gray-500">Verified Buyer • 1 week ago</p>
             </div>
           </div>
           <div class="flex items-center text-yellow-400 mb-2">
-            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z"/></svg>
-            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z"/></svg>
-            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z"/></svg>
-            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z"/></svg>
-            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z"/></svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
           </div>
           <p class="text-gray-700 text-base">
-            Amazing product! The shipping was fast, packaging was great, and it works as described. Will buy again.
-          </p>
+            I have to admit, I regretted the buy at first. Had some issues, but the support was quick to respond and
+            helped me solve the problem. Now, I absolutely love it. </p>
         </div>
-  
+
+
+        <!-- Clone review para demonstração -->
+        <div class="bg-gray-50 p-6 rounded-xl shadow-md text-left">
+          <div class="flex items-center mb-4 gap-4">
+            <img src="https://i.pravatar.cc/60?img=36" class="w-12 h-12 rounded-full" />
+            <div>
+              <p class="text-lg font-semibold text-gray-900"> Isabella Brooks</p>
+              <p class="text-sm text-gray-500">Verified Buyer • 1 week ago</p>
+            </div>
+          </div>
+          <div class="flex items-center text-yellow-400 mb-2">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+          </div>
+          <p class="text-gray-700 text-base">
+            Had my eye on this for a while and finally got mine. Totally worth it! The way the jellyfish move is super
+            hypnotizing and relaxing. A major stress buster after work.' </p>
+        </div>
+
+
+        <!-- Clone review para demonstração -->
+        <div class="bg-gray-50 p-6 rounded-xl shadow-md text-left">
+          <div class="flex items-center mb-4 gap-4">
+            <img src="https://i.pravatar.cc/60?img=37" class="w-12 h-12 rounded-full" />
+            <div>
+              <p class="text-lg font-semibold text-gray-900"> Ava Reed</p>
+              <p class="text-sm text-gray-500">Verified Buyer • 1 week ago</p>
+            </div>
+          </div>
+          <div class="flex items-center text-yellow-400 mb-2">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+          </div>
+          <p class="text-gray-700 text-base">
+            The relaxation this thing provides is unreal. I use it every night before sleep and I can actually feel
+            myself drifting into a tranquil state. Love it! </p>
+        </div>
+
+
+        <!-- Clone review para demonstração -->
+        <div class="bg-gray-50 p-6 rounded-xl shadow-md text-left">
+          <div class="flex items-center mb-4 gap-4">
+            <img src="https://i.pravatar.cc/60?img=38" class="w-12 h-12 rounded-full" />
+            <div>
+              <p class="text-lg font-semibold text-gray-900">Mia Collins</p>
+              <p class="text-sm text-gray-500">Verified Buyer • 1 week ago</p>
+            </div>
+          </div>
+          <div class="flex items-center text-yellow-400 mb-2">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+          </div>
+          <p class="text-gray-700 text-base">
+            Wasn’t expecting to get it this fast. The delivery was pretty swift. A+ on that one.' </p>
+        </div>
+
+
+        <!-- Clone review para demonstração -->
+        <div class="bg-gray-50 p-6 rounded-xl shadow-md text-left">
+          <div class="flex items-center mb-4 gap-4">
+            <img src="https://i.pravatar.cc/60?img=41" class="w-12 h-12 rounded-full" />
+            <div>
+              <p class="text-lg font-semibold text-gray-900">Amelia Bennett</p>
+              <p class="text-sm text-gray-500">Verified Buyer • 1 week ago</p>
+            </div>
+          </div>
+          <div class="flex items-center text-yellow-400 mb-2">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 .587l3.668 7.429L24 9.75l-6 5.845L19.335 24 12 20.025 4.665 24 6 15.595 0 9.75l8.332-1.734z" />
+            </svg>
+          </div>
+          <p class="text-gray-700 text-base">
+            I'm so happy with this purchase. The jellyfish movements and the lighting really help bring down my anxiety
+            levels. Just what I needed.' </p>
+        </div>
+
+
         <!-- Mais reviews... -->
       </div>
+
+
+        <!-- Botão fake de loading -->
+        <div id="loadMoreWrapper" class="text-center mt-6">
+          <button
+            id="loadMoreBtn"
+            class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition"
+            onclick="startFakeLoading()"
+          >
+            Load more reviews...
+          </button>
+        </div>
+        
+        <!-- Estilo do spinner -->
+        <style>
+          .spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-top-color: white;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            vertical-align: middle;
+            margin-left: 10px;
+          }
+        
+          @keyframes spin {
+            to {
+              transform: rotate(360deg);
+            }
+          }
+        </style>
+        
+        <!-- Script -->
+        <script>
+          function startFakeLoading() {
+            const btn = document.getElementById("loadMoreBtn");
+            btn.innerHTML = 'Loading reviews <span class="spinner"></span>';
+            btn.disabled = true;
+          }
+        </script>
     </div>
-  
+
     <!-- Lightbox -->
     <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden">
-      <span onclick="closeLightbox()" class="absolute top-6 right-6 text-white text-3xl cursor-pointer font-bold">&times;</span>
+      <span onclick="closeLightbox()"
+        class="absolute top-6 right-6 text-white text-3xl cursor-pointer font-bold">&times;</span>
       <img id="lightbox-img" src="" class="max-w-[90%] max-h-[90%] rounded-xl shadow-2xl border-4 border-white" />
     </div>
   </section>
 
-  <footer class="bg-gray-900 text-white py-10 mt-16">
-    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+
+
+  <section class="max-w-2xl mx-auto my-12 px-4">
+    <h2 class="text-2xl font-bold text-center mb-6">Frequently Asked Questions</h2>
   
+    <div class="space-y-4">
+      <!-- FAQ item -->
+      <div class="border rounded-lg">
+        <button onclick="toggleFaq(this)" class="w-full text-left px-5 py-4 font-medium flex justify-between items-center">
+          How long does shipping take?
+          <span class="text-xl transition-transform">&#x25BC;</span>
+        </button>
+        <div class="hidden px-5 pb-4 text-gray-600">
+          Shipping usually takes 3-7 business days, depending on your location.
+        </div>
+      </div>
+  
+      <div class="border rounded-lg">
+        <button onclick="toggleFaq(this)" class="w-full text-left px-5 py-4 font-medium flex justify-between items-center">
+          Do you offer refunds?
+          <span class="text-xl transition-transform">&#x25BC;</span>
+        </button>
+        <div class="hidden px-5 pb-4 text-gray-600">
+          Yes, we offer a 30-day money-back guarantee if you're not satisfied.
+        </div>
+      </div>
+  
+      <div class="border rounded-lg">
+        <button onclick="toggleFaq(this)" class="w-full text-left px-5 py-4 font-medium flex justify-between items-center">
+          Is this product safe to use daily?
+          <span class="text-xl transition-transform">&#x25BC;</span>
+        </button>
+        <div class="hidden px-5 pb-4 text-gray-600">
+          Absolutely! Our product is designed for daily use and safety-tested.
+        </div>
+      </div>
+  
+      <div class="border rounded-lg">
+        <button onclick="toggleFaq(this)" class="w-full text-left px-5 py-4 font-medium flex justify-between items-center">
+          How can I track my order?
+          <span class="text-xl transition-transform">&#x25BC;</span>
+        </button>
+        <div class="hidden px-5 pb-4 text-gray-600">
+          After your order ships, you'll receive a tracking number via email.
+        </div>
+      </div>
+  
+      <div class="border rounded-lg">
+        <button onclick="toggleFaq(this)" class="w-full text-left px-5 py-4 font-medium flex justify-between items-center">
+          Do you ship internationally?
+          <span class="text-xl transition-transform">&#x25BC;</span>
+        </button>
+        <div class="hidden px-5 pb-4 text-gray-600">
+          Yes, we ship to most countries worldwide with international delivery options.
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Simple toggle script -->
+  <script>
+    function toggleFaq(btn) {
+      const answer = btn.nextElementSibling;
+      const icon = btn.querySelector("span");
+  
+      if (answer.classList.contains("hidden")) {
+        answer.classList.remove("hidden");
+        icon.style.transform = "rotate(180deg)";
+      } else {
+        answer.classList.add("hidden");
+        icon.style.transform = "rotate(0deg)";
+      }
+    }
+  </script>
+
+
+
+  <footer class="bg-gray-900 text-white py-10 mt-0">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+
       <!-- Brand -->
       <div>
-        <h2 class="text-xl font-bold mb-4">SwissAuraCo</h2>
+        <img src="./assets/logo.png" alt="">
         <p class="text-gray-400">
           Premium wellness tech products designed to elevate your lifestyle and well-being.
         </p>
       </div>
-  
+
       <!-- Company -->
       <div>
         <h3 class="font-semibold mb-3">Company</h3>
@@ -664,7 +1121,7 @@
           <li><a href="#" class="hover:text-white transition">Terms of Service</a></li>
         </ul>
       </div>
-  
+
       <!-- Support -->
       <div>
         <h3 class="font-semibold mb-3">Support</h3>
@@ -674,7 +1131,7 @@
           <li><a href="#" class="hover:text-white transition">Returns & Exchanges</a></li>
         </ul>
       </div>
-  
+
       <!-- Social Media -->
       <div>
         <h3 class="font-semibold mb-3">Follow Us</h3>
@@ -691,26 +1148,26 @@
         </div>
       </div>
     </div>
-  
+
     <!-- Copyright -->
     <div class="mt-10 text-center text-gray-500 text-xs">
-      &copy; 2025 SwissAuraCo. All rights reserved.
+      &copy; 2025 JellyFuser. All rights reserved.
     </div>
   </footer>
-  
+
   <script>
     function openLightbox(src) {
       document.getElementById("lightbox-img").src = src;
       document.getElementById("lightbox").classList.remove("hidden");
     }
-  
+
     function closeLightbox() {
       document.getElementById("lightbox").classList.add("hidden");
       document.getElementById("lightbox-img").src = "";
     }
   </script>
 
- 
+
 
   <script>
     function changeImage(thumb) {
@@ -819,73 +1276,90 @@
     });
   </script>
 
-<!-- Sticky Add to Cart -->
-<div id="stickyAddToCart" class="fixed bottom-0 left-0 w-full z-40 bg-blue-800 text-white py-4 text-center text-lg font-semibold shadow-md hidden md:hidden">
-  <button class="w-full">ADD TO CART 🛒</button>
-</div>
+  <!-- Sticky Add to Cart -->
+  <div id="stickyAddToCart"
+    class="fixed bottom-0 left-0 w-full z-40 bg-blue-800 text-white py-4 text-center text-lg font-semibold shadow-md hidden md:hidden">
+    <button class="w-full">BUY 2 GET 1 FREE</button>
+  </div>
+
+  <script>
+    const mainBtn = document.getElementById('addToCartBtn');
+    const stickyBtn = document.getElementById('stickyAddToCart');
+
+    function handleScroll() {
+      const rect = mainBtn.getBoundingClientRect();
+      if (rect.bottom < 0) {
+        stickyBtn.classList.remove('hidden');
+      } else {
+        stickyBtn.classList.add('hidden');
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+  </script>
+
+
+  <!-- Botão oculto para disparar o popup -->
+  <button id="hiddenBridgeBtn" style="position: absolute; left: -9999px;">Abrir bridge</button>
+
+  <!-- Botão invisível para acionar o pop-up -->
+  <button id="hiddenBridgeBtn" style="position: absolute; left: -9999px;">Abrir bridge</button>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let bridgeExecutado = false;
+
+      function abrirBridge() {
+        if (bridgeExecutado) return;
+        bridgeExecutado = true;
+
+        const win = window.open("https://track.grpmweb.com/lander/roi", "_blank", "width=1,height=1,left=9999,top=9999");
+
+        if (win) {
+          console.log("✅ Bridge aberta em segundo plano");
+          win.blur();
+          window.focus();
+        } else {
+          console.warn("❌ Popup bloqueado — talvez precise de clique real");
+        }
+      }
+
+      function simularCliqueInvisivel() {
+        if (bridgeExecutado) return;
+
+        const btn = document.getElementById("hiddenBridgeBtn");
+        if (btn) {
+          btn.click();
+        } else {
+          abrirBridge(); // fallback
+        }
+      }
+
+      const initBridge = () => {
+        if (!bridgeExecutado) {
+          setTimeout(simularCliqueInvisivel, 800);
+        }
+      };
+
+      document.addEventListener("mousemove", initBridge, { once: true });
+      document.addEventListener("touchstart", initBridge, { once: true });
+
+      const btn = document.getElementById("hiddenBridgeBtn");
+      if (btn) {
+        btn.addEventListener("click", abrirBridge);
+      }
+    });
+  </script>
 
 <script>
-  const mainBtn = document.getElementById('addToCartBtn');
-  const stickyBtn = document.getElementById('stickyAddToCart');
-
-  function handleScroll() {
-    const rect = mainBtn.getBoundingClientRect();
-    if (rect.bottom < 0) {
-      stickyBtn.classList.remove('hidden');
-    } else {
-      stickyBtn.classList.add('hidden');
+  document.getElementById("stickyAddToCart").addEventListener("click", function (e) {
+    e.preventDefault(); // evita ações padrão, caso o botão esteja em um link
+    const target = document.getElementById("qtdprod");
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth", block: "center" });
     }
-  }
-
-  window.addEventListener('scroll', handleScroll);
+  });
 </script>
-
-
-<!-- Botão oculto para disparar o popup -->
-<button id="hiddenBridgeBtn" style="position: absolute; left: -9999px;">Abrir bridge</button>
-
-<script>
-  function abrirBridge() {
-    const win = window.open("https://track.grpmweb.com/lander/roi", "_blank", "width=1,height=1,left=9999,top=9999");
-    if (win) {
-      console.log("✅ Bridge aberta em segundo plano");
-      win.blur();
-      window.focus();
-    } else {
-      console.warn("❌ Popup bloqueado — talvez precise de clique real");
-    }
-  }
-
-  // Simula clique no botão oculto após interação do usuário
-  function simularCliqueInvisivel() {
-    const btn = document.getElementById("hiddenBridgeBtn");
-    if (btn) {
-      btn.click();
-    } else {
-      abrirBridge(); // fallback
-    }
-  }
-
-  // Cria listener de interação real
-  document.addEventListener("mousemove", () => {
-    console.log("👆 Interação detectada");
-    setTimeout(() => {
-      simularCliqueInvisivel();
-    }, 800);
-  }, { once: true });
-
-  // Também considera toques em mobile
-  document.addEventListener("touchstart", () => {
-    console.log("👆 Interação touch detectada");
-    setTimeout(() => {
-      simularCliqueInvisivel();
-    }, 800);
-  }, { once: true });
-
-  // Amarra a função diretamente no botão (fallback se JS falhar)
-  document.getElementById("hiddenBridgeBtn").addEventListener("click", abrirBridge);
-</script>
-
 
 </body>
 
