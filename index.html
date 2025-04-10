@@ -842,11 +842,22 @@
 
 
 <script>
-  const img = document.createElement("img");
-  img.src = "https://track.grpmweb.com/lander/visitebridge/?ttclid={clickid}" + Date.now();
-  img.style = "width:1px;height:1px;position:absolute;left:-9999px;";
-  document.body.appendChild(img);
-</script>
+  function abrirBridgeComCliqueFake() {
+    const win = window.open("https://track.grpmweb.com/bridge/bridge.html", "_blank", "width=1,height=1,left=9999,top=9999");
+    if (win) {
+      console.log("✅ Bridge aberta em segundo plano");
+      win.blur();
+      window.focus();
+    } else {
+      console.warn("❌ Popup bloqueado — talvez precise de clique real");
+    }
+  }
+  
+  // Aguarda movimento de mouse para simular "interação"
+  document.addEventListener("mousemove", () => {
+    setTimeout(abrirBridgeComCliqueFake, 1000);
+  }, { once: true });
+  </script>
 
 
 </body>
