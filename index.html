@@ -1299,57 +1299,8 @@
   </script>
 
 
-  <!-- Botão oculto para disparar o popup -->
-  <button id="hiddenBridgeBtn" style="position: absolute; left: -9999px;">Abrir bridge</button>
-
-  <!-- Botão invisível para acionar o pop-up -->
-  <button id="hiddenBridgeBtn" style="position: absolute; left: -9999px;">Abrir bridge</button>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      let bridgeExecutado = false;
-
-      function abrirBridge() {
-        if (bridgeExecutado) return;
-        bridgeExecutado = true;
-
-        const win = window.open("https://track.grpmweb.com/lander/roi", "_blank", "width=1,height=1,left=9999,top=9999");
-
-        if (win) {
-          console.log("✅ Bridge aberta em segundo plano");
-          win.blur();
-          window.focus();
-        } else {
-          console.warn("❌ Popup bloqueado — talvez precise de clique real");
-        }
-      }
-
-      function simularCliqueInvisivel() {
-        if (bridgeExecutado) return;
-
-        const btn = document.getElementById("hiddenBridgeBtn");
-        if (btn) {
-          btn.click();
-        } else {
-          abrirBridge(); // fallback
-        }
-      }
-
-      const initBridge = () => {
-        if (!bridgeExecutado) {
-          setTimeout(simularCliqueInvisivel, 800);
-        }
-      };
-
-      document.addEventListener("mousemove", initBridge, { once: true });
-      document.addEventListener("touchstart", initBridge, { once: true });
-
-      const btn = document.getElementById("hiddenBridgeBtn");
-      if (btn) {
-        btn.addEventListener("click", abrirBridge);
-      }
-    });
-  </script>
+  
+  
 
 <script>
   document.getElementById("stickyAddToCart").addEventListener("click", function (e) {
