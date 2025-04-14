@@ -1,7 +1,15 @@
 #!/bin/bash
-git add .
-echo "✔ Arquivos adicionados"
 
-read -p "📝 Escreva sua mensagem de commit: " msg
-git commit -m "$msg"
-git push
+# Nome do commit como argumento opcional
+COMMIT_MSG=${1:-"Deploy automático"}
+
+echo "🔄 Adicionando arquivos..."
+git add .
+
+echo "📝 Commitando alterações..."
+git commit -m "$COMMIT_MSG"
+
+echo "🚀 Enviando para o GitHub..."
+git push origin main
+
+echo "✅ Deploy concluído!"
